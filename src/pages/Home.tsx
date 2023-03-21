@@ -9,18 +9,11 @@ import WorkOutlineOutlinedIcon from "@mui/icons-material/WorkOutlineOutlined";
 import "../index.css";
 
 export default function Home() {
-    const [time, setTime] = useState(new Date());
     const iconSize = {
         fontSize: 25,
     };
 
-    useEffect(() => {
-        var timer = setInterval(() => setTime(new Date()), 1000);
-        return function cleanup() {
-            clearInterval(timer);
-        };
-    }, []);
-
+    console.log(iconSize);
     return (
         <div
             className="container p-3 card min-vh-100"
@@ -82,9 +75,6 @@ export default function Home() {
             </div>
             <footer>
                 <div className="text-center">
-                    <span>
-                        <em>Time: {time.toLocaleString()}</em>
-                    </span>
                     <p>
                         <em>Copyright by Le Nhut Khang, Vo</em>
                     </p>
