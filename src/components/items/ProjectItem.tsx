@@ -300,11 +300,11 @@ export default function ProjectItem(
                         <RenderEn />
                     </div>
                     <Divider />
-                    <div className="mt-2">
+                    <div className="mt-2 mx-3 ">
                         {backendUrl ? (
                             <a
                                 href={backendUrl}
-                                className="btn btn-outline-danger"
+                                className="btn mt-2 btn-outline-danger"
                             >
                                 Backend
                                 <img
@@ -320,7 +320,7 @@ export default function ProjectItem(
                         {adminUrl ? (
                             <a
                                 href={adminUrl}
-                                className={`btn mx-3 ${
+                                className={`btn mt-2 mx-3 ${
                                     github
                                         ? "btn-outline-dark"
                                         : "btn-outline-danger"
@@ -369,7 +369,7 @@ export default function ProjectItem(
                         {sheet ? (
                             <a
                                 href={sheet}
-                                className={"btn mx-1 btn-outline-success"}
+                                className={"btn mt-2 mx-1 btn-outline-success"}
                             >
                                 Plan
                                 <img

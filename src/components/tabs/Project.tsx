@@ -9,7 +9,7 @@ export default function Project() {
         <div>
             <ProjectItem
                 projectName="Movies Website"
-                projectPosition="Backend Developer/Leader"
+                projectPosition="Backend/Leader"
                 projectDescription={
                     "- Một ý tưởng nhất thời của cả nhóm \
                     nhưng lại là một bước ngoặt khiến cho bản thân mình phải cố gắng nổ lực nhiều hơn nữa. \
@@ -38,7 +38,7 @@ export default function Project() {
             />
             <ProjectItem
                 projectName="Music Group Online Website "
-                projectPosition="Backend Developer/Leader"
+                projectPosition="Backend/Leader"
                 projectDescription={
                     "- Website nghe nhạc trực tuyến cùng với nhau và nhạc của tất cả những người trong phòng được đồng bộ thời gian với nhau sử dụng công nghệ Socket và framework Socket.io.  \
                     Sản phẩm sử dụng ngôn ngữ lập trình chính là: JavaScript. Cùng với có là một số những Framework khác như Express xây dựng Restful API và Sequelize(ORM) hỗ trợ cho việc tương \
@@ -63,7 +63,7 @@ export default function Project() {
                      hàng và bắt đầu bán hàng. Sử dụng PHP Laravel và PostgreSQL. "
                 }
                 projectMember="4"
-                projectPosition="Backend Developer/Leader"
+                projectPosition="Backend/Leader"
                 projectContribute="- Lên kế hoạch thực hiện cho cả nhóm, thiết kế database và xây dựng 100% back-end của Website với ngôn ngữ chính lập trình chính là PHP và Laravel với mô hình Restful API."
                 projectResult={
                     "- Kết quả đáp ứng tốt những yêu cầu đặt ra lúc ban đầu 8/10. Thời gian bắt đầu và hoàn thành trong 2 tháng nên cũng có nhiều hạn chế như chưa áp dụng được GraphQL và Tối ưu hệ thống chưa thật sự tốt!"
