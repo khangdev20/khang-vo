@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Avatar, Divider } from "@mui/material";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
@@ -16,9 +16,10 @@ export default function Home() {
     console.log(iconSize);
     return (
         <div
-            className="container p-3 card min-vh-100"
+            className="container p-3 rounded min-vh-100"
             style={{
                 maxWidth: "730px",
+                background: "white",
             }}
         >
             <div className="p-2">
@@ -27,9 +28,9 @@ export default function Home() {
                         <Avatar
                             alt="Remy Sharp"
                             src="https://scontent-hkg4-1.xx.fbcdn.net/v/t39.30808-6/328891727_1204167630214778_6585072608141860780_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=59vTW-KyBPAAX8K5mq7&_nc_ht=scontent-hkg4-1.xx&oh=00_AfCtOFURQ974jmID6503NSQysJm9tfJAuCJOaoNFv-HAlg&oe=641DA2D9"
-                            sx={{ width: 150, height: 150 }}
+                            sx={{ width: 140, height: 140 }}
                         />
-                        <div className="mx-2 p-3 m-2">
+                        <div className="mx-2 p-3 m-0 ">
                             <div className="d-flex align-items-center">
                                 <PersonOutlinedIcon sx={iconSize} />
                                 <span className="h5 p-0 m-2 mx-2 fw-normal">
@@ -58,7 +59,7 @@ export default function Home() {
                     </div>
                     <div className="d-flex flex-column align-items-center d-hover mb-3">
                         <img
-                            alt=""
+                            alt="hutech"
                             height={40}
                             src="https://cdn.haitrieu.com/wp-content/uploads/2021/09/Logo-DH-CONG-NGHE-THANH-PHO-HO-CHI-MINH-HUTECH.png"
                         />
@@ -70,7 +71,7 @@ export default function Home() {
                         </a>
                     </div>
                 </div>
-                <Divider sx={{ borderBottomWidth: 5 }} variant="fullWidth" />
+                <Divider sx={{ borderBottomWidth: 4 }} variant="fullWidth" />
                 <TabHeader />
             </div>
             <footer>

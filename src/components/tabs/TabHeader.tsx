@@ -15,9 +15,18 @@ export default function TabHeader() {
     return (
         <Box sx={{ bgcolor: "background.paper" }}>
             <Tabs value={value} onChange={handleChange} centered>
-                <Tab className="fw-bold text-capitalize" label="Contact" />
-                <Tab className="fw-bold text-capitalize" label="Project" />
-                <Tab className="fw-bold text-capitalize" label="Description" />
+                <Tab
+                    className="fw-bold text-dark text-capitalize"
+                    label="Contact"
+                />
+                <Tab
+                    className="fw-bold text-dark text-capitalize"
+                    label="Project"
+                />
+                <Tab
+                    className="fw-bold  text-dark text-capitalize"
+                    label="Description"
+                />
             </Tabs>
             {value === 0 ? (
                 <Contact />

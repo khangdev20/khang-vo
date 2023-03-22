@@ -12,14 +12,46 @@ code {
         monospace;
 }
 
-.d-hover:hover {
-    cursor: pointer;
-    text-decoration: underline;
+.box-hover {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.box-hover::after {
+    content: "";
+    inset: 4px;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.box-hover::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 800px;
+    background: linear-gradient(#7de1ff, #f81717);
+    animation: animate 2s linear infinite;
+}
+.box-hover div {
+    z-index: 10;
+    border-radius: 10px;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .box-hover:hover {
     cursor: pointer;
-    background-color: rgb(20, 30, 39);
 }
 body::-webkit-scrollbar {
     width: 0.1rem;
@@ -49,6 +81,6 @@ body {
 }
 
 .logo-hover {
-    height: 35px;
+    height: 30px;
     margin: 5px;
 }

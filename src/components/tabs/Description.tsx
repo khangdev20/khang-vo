@@ -71,14 +71,10 @@ export default function Description() {
             nam: "Ant-Design",
             logo: "https://camo.githubusercontent.com/363242675617648bfbedd1610f89ac28df0f9e1bac8749d83109fafdf8524fff/68747470733a2f2f67772e616c697061796f626a656374732e636f6d2f7a6f732f726d73706f7274616c2f4b4470677667754d704766716148506a6963524b2e737667",
         },
-        {
-            name: "PHP",
-            logo: " https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png",
-        },
     ];
     const RenderEn = () => {
         return (
-            <div>
+            <div className="mx-2">
                 {programming.map((program, key) => (
                     <img
                         key={key}
@@ -96,43 +92,46 @@ export default function Description() {
         document.title = "Võ Lê Nhựt Khang - Description";
     }, []);
     return (
-        <div className="p-3">
+        <div className="p-4">
+            <div>
+                <p className="text-center">Hòa đồng - Vui vẻ - Chăm chỉ</p>
+            </div>
             <div>
                 <div className="h6 fw-bold">🏫 EDUCATION:</div>
-                <div className="align-items-center mb-3">
+                <div className="align-items-center mx-2 mb-3">
                     <div>
                         <a
                             href="https://www.hutech.edu.vn/"
-                            className="p-0 m-0 mx-2 h6 fw-bold text-decoration-none text-dark d-hover"
+                            className="p-0 m-0 mx-4 h6 fw-bold text-decoration-none text-dark d-hover text-uppercase"
                         >
-                            - Ho Chi Minh City University of Technology
+                            Ho Chi Minh City University of Technology (HUTECH)
                         </a>
                         <img
                             alt=""
-                            height={30}
+                            height={25}
                             src="https://cdn.haitrieu.com/wp-content/uploads/2021/09/Logo-DH-CONG-NGHE-THANH-PHO-HO-CHI-MINH-HUTECH.png"
                         />
                     </div>
-                    <p className="p-0 m-0 mx-2 fw-lighter">
-                        - Final year student
+                    <p className="p-0 m-0 mx-3 fw-lighter">
+                        👩‍🎓Final year student
                     </p>
                 </div>
             </div>
             <div className="mb-4">
                 <div className="h6 fw-bold">😉 TECHNICAL SKILLS:</div>
-                <div className="d-flex fex-column">
+                <div className="d-flex mx-3 fex-column">
                     <RenderEn />
                 </div>
             </div>
             <div className="mb-4">
                 <div className="h6 fw-bold">📖 CERTIFICATES:</div>
-                <div>
+                <div className="mx-4">
                     <p className="p-0 m-0 mx-2 fw-lighter">
                         - Agile & Scrum course with DEK Technologies Vietnam
                         (06/2022)
                     </p>
                     <p className="p-0 m-0 mx-2 fw-lighter">
-                        - Communication and Teamwork Skills (05/20022)
+                        - Communication and Teamwork Skills (05/2022)
                     </p>
                     <p className="p-0 m-0 mx-2 fw-lighter">
                         - Presentation and Job Seeking Skills (05/2022)
@@ -145,13 +144,24 @@ export default function Description() {
             </div>
             <div className="mb-4">
                 <div className="h6 fw-bold">🥰 HOBBIES:</div>
-                <div>
-                    <p className="p-0 m-0 mx-2 fw-lighter">- Guitar 🎸</p>
-                    <p className="p-0 m-0 mx-2 fw-lighter">- Travel ✈️</p>
-                    <p className="p-0 m-0 mx-2 fw-lighter">- Football ⚽</p>
-                    <p className="p-0 m-0 mx-2 fw-lighter">- Technology 🧑‍💻</p>
-                    <p className="p-0 m-0 mx-2 fw-lighter">
-                        - Music and Sing 🎵🎤
+                <div className="d-flex mx-4 flex-wrap">
+                    <p className="p-1.5 m-1 mx-1 fw-bold btn btn-outline-secondary">
+                        Sing🎤
+                    </p>
+                    <p className="p-1.5 m-1 mx-1 fw-bold btn btn-outline-secondary">
+                        Music🎵
+                    </p>
+                    <p className="p-1.5 m-1 mx-1 fw-bold btn btn-outline-secondary">
+                        Guitar 🎸
+                    </p>
+                    <p className="p-1.5 m-1 mx-1 fw-bold btn btn-outline-secondary">
+                        Football ⚽
+                    </p>
+                    <p className="p-1.5 m-1 mx-1 fw-bold btn btn-outline-secondary">
+                        Technology 🧑‍💻
+                    </p>
+                    <p className="p-1.5 m-1 mx-1 fw-bold btn btn-outline-secondary">
+                        Travel ✈️
                     </p>
                 </div>
             </div>

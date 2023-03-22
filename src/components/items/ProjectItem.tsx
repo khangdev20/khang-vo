@@ -23,6 +23,7 @@ export default function ProjectItem(
         android,
         group,
         fontend,
+        sheet,
     }: any,
     engineers: [] = []
 ) {
@@ -129,6 +130,14 @@ export default function ProjectItem(
             name: "Material-UI",
             logo: "https://mui.com/static/logo.png",
         },
+        {
+            name: "GitLab",
+            logo: "https://cdn-icons-png.flaticon.com/512/5968/5968853.png",
+        },
+        {
+            name: "GitHub",
+            logo: "https://cdn.icon-icons.com/icons2/2368/PNG/512/github_logo_icon_143772.png",
+        },
     ];
     const group2 = [
         {
@@ -220,15 +229,15 @@ export default function ProjectItem(
             tech = group4;
         }
         return (
-            <div>
+            <div className="mx-3">
                 {tech.map((program, key) => (
                     <img
                         key={key}
                         alt={program.name}
                         title={program.name}
-                        className="mx-1 m-2"
+                        className="mx-2 m-2"
                         style={{
-                            height: 20,
+                            height: 25,
                             margin: 1,
                         }}
                         src={program.logo}
@@ -258,7 +267,7 @@ export default function ProjectItem(
                     <Divider />
                     <div>
                         <div className="fw-bold">✨Description:</div>
-                        <div className="p-0 m-2 mx-1 text-justify">
+                        <div className="p-0 m-2 mx-4 text-justify">
                             {projectDescription}
                         </div>
                     </div>
@@ -276,13 +285,13 @@ export default function ProjectItem(
                     </div>
                     <div>
                         <div className="fw-bold">🛠️Contribute:</div>
-                        <div className="p-0 m-2 mx-1 text-justify">
+                        <div className="p-0 m-2 mx-4 text-justify">
                             {projectContribute}
                         </div>
                     </div>
                     <div>
                         <div className="fw-bold h6">✨Result:</div>
-                        <div className="p-0 m-2 mx-1 text-justify">
+                        <div className="p-0 m-2 mx-4 text-justify">
                             {projectResult}
                         </div>
                     </div>
@@ -308,7 +317,6 @@ export default function ProjectItem(
                         ) : (
                             ""
                         )}
-
                         {adminUrl ? (
                             <a
                                 href={adminUrl}
@@ -351,6 +359,24 @@ export default function ProjectItem(
                                         github
                                             ? "https://cdn.icon-icons.com/icons2/2368/PNG/512/github_logo_icon_143772.png"
                                             : "https://cdn-icons-png.flaticon.com/512/5968/5968853.png"
+                                    }
+                                    width={25}
+                                />
+                            </a>
+                        ) : (
+                            ""
+                        )}
+                        {sheet ? (
+                            <a
+                                href={sheet}
+                                className={"btn mx-1 btn-outline-success"}
+                            >
+                                Plan
+                                <img
+                                    className="mx-1"
+                                    alt=""
+                                    src={
+                                        "https://cdn-icons-png.flaticon.com/512/2991/2991114.png"
                                     }
                                     width={25}
                                 />
