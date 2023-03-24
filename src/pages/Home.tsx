@@ -78,6 +78,7 @@ export default function Home() {
                 <div className="text-center">
                     <p>
                         <em>Copyright by Le Nhut Khang, Vo</em>
+                        <em>Latest Update: 25/03/2023</em>
                     </p>
                 </div>
             </footer>
