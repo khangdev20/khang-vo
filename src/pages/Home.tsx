@@ -27,7 +27,7 @@ export default function Home() {
                     <div className="d-flex align-items-center flex-wrap justify-content-center m-2">
                         <Avatar
                             alt="Remy Sharp"
-                            src="https://scontent-hkg4-1.xx.fbcdn.net/v/t39.30808-6/328891727_1204167630214778_6585072608141860780_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=59vTW-KyBPAAX8K5mq7&_nc_ht=scontent-hkg4-1.xx&oh=00_AfCtOFURQ974jmID6503NSQysJm9tfJAuCJOaoNFv-HAlg&oe=641DA2D9"
+                            src="https://scontent.fhan4-3.fna.fbcdn.net/v/t39.30808-6/328891727_1204167630214778_6585072608141860780_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=mpCXpRhcTvEAX_MDN8G&_nc_ht=scontent.fhan4-3.fna&oh=00_AfAquaxRGgefphjG-_tH0RxECpQP9pwzvZQqlHIpo1esZg&oe=64239199"
                             sx={{ width: 140, height: 140 }}
                         />
                         <div className="mx-2 p-3 m-0 ">
