@@ -20,17 +20,24 @@ code {
 
 .box-hover::after {
     content: "";
-    inset: 4px;
+    inset: 2px;
     position: absolute;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .box-hover::before {
     content: "";
     position: absolute;
     width: 200px;
-    height: 800px;
-    background: linear-gradient(#7de1ff, #f81717);
+    height: 900px;
+    background: linear-gradient(
+        to right,
+        #2d69c2,
+        #7a73c7,
+        #a97ec9,
+        #ce8dc9,
+        #eba0ca
+    );
     animation: animate 2s linear infinite;
 }
 .box-hover div {

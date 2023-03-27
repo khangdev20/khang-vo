@@ -24,7 +24,7 @@ export default function TabHeader() {
                     label="Project"
                 />
                 <Tab
-                    className="fw-bold  text-dark text-capitalize"
+                    className="fw-bold text-dark text-capitalize"
                     label="Description"
                 />
             </Tabs>

@@ -75,10 +75,11 @@ export default function Home() {
                 <TabHeader />
             </div>
             <footer>
-                <div className="text-center">
+                <div className="text-center ">
                     <p>
                         <em>Copyright by Le Nhut Khang, Vo</em>
-                        <em>Latest Update: 25/03/2023</em>
+                        <br />
+                        <em>Latest Update: 27/03/2023</em>
                     </p>
                 </div>
             </footer>

@@ -2,37 +2,20 @@ import {
     Accordion,
     AccordionDetails,
     AccordionSummary,
-    Divider,
     Typography,
 } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { NotionRenderer, BlockMapType } from "react-notion";
+import { SyncOutlined } from "@ant-design/icons";
 
-export default function ProjectItem(
-    {
-        projectName,
-        projectDescription,
-        projectMember,
-        projectContribute,
-        projectResult,
-        projectPosition,
-        notionPageId,
-        projectRepository,
-        backendUrl,
-        adminUrl,
-        github,
-        android,
-        group,
-        fontend,
-        sheet,
-    }: any,
-    engineers: [] = []
-) {
+export default function ProjectItem({ notionPageId }: any) {
     const [data, setData] = useState({});
     const [notionTitle, setNotionTile] = useState("");
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
+        setLoading(true);
         fetch(`https://notion-api.splitbee.io/v1/page/${notionPageId}`)
             .then((res) => res.json())
             .then((data) => {
@@ -41,8 +24,11 @@ export default function ProjectItem(
                 setNotionTile(
                     blockMap[Object.keys(blockMap)[0]].value.properties.title
                 );
+            })
+            .finally(() => {
+                setLoading(false);
             });
-    }, []);
+    }, [notionPageId]);
 
     return (
         <div className="p-2">
@@ -57,9 +43,19 @@ export default function ProjectItem(
                             "linear-gradient(to right, #f4c4ee, #edbbed, #e6b1ec, #dea8eb, #d4a0eb)",
                     }}
                 >
-                    <Typography className="fw-bold text-uppercase">
-                        {notionTitle}
-                    </Typography>
+                    <span>
+                        <Typography className="fw-bold text-uppercase">
+                            {notionTitle}
+                        </Typography>
+                        {loading ? (
+                            <SyncOutlined
+                                spin={loading}
+                                twoToneColor="#eb2f96"
+                            />
+                        ) : (
+                            ""
+                        )}
+                    </span>
                 </AccordionSummary>
                 <AccordionDetails>
                     <NotionRenderer blockMap={data} />
